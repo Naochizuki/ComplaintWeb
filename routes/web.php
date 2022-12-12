@@ -17,12 +17,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sign-up', function () {
-    return 'Halaman Sign up';
-});
-
-Route::get('/login', function () {
-    return 'Halaman Login';
+Route::get('/homepage', function () {
+    return view('homepage');
 });
 
 Route::get('/pengaduan', function () {

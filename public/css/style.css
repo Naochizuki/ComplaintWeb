@@ -21,6 +21,10 @@ input:focus {
     outline: none
 }
 
+button {
+    cursor: pointer;
+}
+
 button:hover {
     outline: none;
 }
@@ -107,6 +111,17 @@ button:hover {
     align-items: center;
 }
 
+.submit-container {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #ff4e00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .title {
     font-weight: bold;
     font-size: 50px;
@@ -156,4 +171,10 @@ button:hover {
     font-size: 18px;
     color: white;
     text-decoration: none;
+}
+
+.button-submit {
+    background-color: #ff4e00;
+    border: none;
+    font-size: 18px;
 }

@@ -7,9 +7,11 @@
             <div class="subtitle text-orange metrophobic">SISTEM PENGADUAN HAK ASASI MANUSIA</div>
         </div>
         <div>
-            <div class="img-container">
-                <img src="img/ufuty.png" alt="SiPEKA" class="icon-img">
-            </div>
+            <a href="/pengaduan">
+                <div class="img-container">
+                    <img src="img/ufuty.png" alt="SiPEKA" class="icon-img">
+                </div>
+            </a>
         </div>
         <a href="/" class="button-logout text-orange unbounded">
             <div class="logout-container">

@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/homepage', function () {
-    return view('homepage');
-});
-
-Route::get('/pengaduan', function () {
-    return view('pengaduan');
-});
+Route::get('/', [AuthController::class, 'show_welcome_page'])
+    ->name('welcome.page');
+Route::post('/homepage', [AuthController::class, 'auth'])
+    ->name('home.auth');
+Route::get('/homepage', [HomeController::class, 'show_home_page'])
+    ->name('home.page');
+Route::get('/pengaduan', [ComplaintController::class, 'show_complaint_page'])
+    ->name('complaint.page');
+Route::post('/pengaduan', [ComplaintController::class, 'send_complaint'])
+    ->name('complaint.send');

@@ -13,20 +13,28 @@ body {
 }
 
 input {
-    width: 250px;
+    width: 300px;
     height: 25px;
+    color: #ff4e00;
+    font-family: 'Unbounded', cursive;
+    padding-left: 2px;
+    font-size: 12px;
 }
 
-input:focus {
-    outline: none
+textarea {
+    resize: none;
+    color: #ff4e00;
+    font-family: 'Unbounded', cursive;
+    padding: 2px;
+    font-size: 12px;
+}
+
+textarea:focus, input:focus, select:focus, button:hover {
+    outline: none;
 }
 
 button {
     cursor: pointer;
-}
-
-button:hover {
-    outline: none;
 }
 
 .metrophobic {
@@ -54,6 +62,11 @@ button:hover {
     border-left: 0;
     border-right: 0;
     border-bottom: 3px solid #ff4e00;
+}
+
+.full-border {
+    border: 3px solid #ff4e00;
+    white-space: pre-warp;
 }
 
 .form-container {
@@ -122,6 +135,50 @@ button:hover {
     cursor: pointer;
 }
 
+.input-i-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-pengaduan-container {
+    width: 100%;
+    heightL 100%;
+}
+
+.pengaduan-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.p-1st-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.p-2nd-container {
+    display: flex;
+    width: 79.9%;
+    justify-content: end;
+}
+
+.pengaduan-1st-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pengaduan-2nd-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 95px;
+}
+
 .title {
     font-weight: bold;
     font-size: 50px;
@@ -177,4 +234,39 @@ button:hover {
     background-color: #ff4e00;
     border: none;
     font-size: 18px;
+}
+
+.invalid-feedback {
+    font-size: 10px;
+    color: red;
+    margin-top: -10px;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+.credential-invalid {
+    font-size: 15px;
+    color: red;
+    font-family: 'Metrophobic', sans-serif;
+    padding-left: 100px;
+}
+
+.slash {
+    transform: translateX(4px);
+    font-size: 25px;
+}
+
+.input-select {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid #ff4e00;
+    color: #ff4e00;
+    font-family: 'Unbounded', sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+.input-number {
+    max-width: 150px;
+    text-align: center;
 }
